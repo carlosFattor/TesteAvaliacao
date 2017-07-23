@@ -1,0 +1,20 @@
+ 4)   O que é Deadlock? Detalhe um pouco sobre o caso e como você poderia
+resolver isso.
+
+    Deadlock ocorre em situações onde existe a necessidade de se trabalhar com threads, geralmente ocorrem quando o gerenciamento das threads não é bem organizado e threads
+ficam bloqueadas a espera de outra.
+
+Tendo ciencia de que threads é algo difícil de gerenciar, existem frameworks especificos para tratar de situações de concorencia. Estes podem ser:
+ - Akka
+ - Vertx
+
+Estes são alguns frameworks que auxiliam e muito a trabalharmos com concorrência.
+
+5) Uma das grandes inclusões no Java 8 foi a API Stream. Com ela podemos
+fazer diversas operações de loop, filtros, maps, etc. Porém, existe uma
+variação bem interessante do Stream que é ParallelStreams. Descreva com
+suas palavras quando qual é a diferença entre os dois e quando devemos
+utilizar cada um deles.
+
+A idéia por traz do ParallelStreams é de possibilitar a manipulação, por exemplo, de uma lista, em conjunto da função map, executar concorrentemente todos os itens da lista,
+já o stream normal, executará em sequencia uma a uma cada item da lista
